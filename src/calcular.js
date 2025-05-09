@@ -11,6 +11,25 @@
 
 function calcular(num1, num2, operador) {
   // TODO: implementar função
+  if(typeof num1 == "string" || typeof num2 == "string"){
+    return "Erro: parâmetros inválidos"
+  }
+  if(operador == "/" && num1 == 0 || num2 == 0){
+    return "Erro: divisão por zero"
+  }
+  if(operador != "+" && operador != "-" && operador != "*" && operador != "/"){
+    return "Erro: operação inválida"
+  }
+  if(operador == "+"){
+    return num1 + num2
+  }
+  else if(operador == "-"){
+    return num1 - num2
+  }
+  else if(operador == "*"){
+    return num1 * num2
+  }
+    return num1 / num2
 }
 
 

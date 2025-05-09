@@ -6,6 +6,11 @@
 
 function corrigirValor(valor) {
   // TODO: implementar função
+  let verifica = Number(valor)
+  if (isNaN(verifica)){
+    return "Valor inválido"
+  }
+  return Number(valor)
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

@@ -9,8 +9,13 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  let maximo = Math.ceil(max)
+  let numAleatorio = Math.floor(Math.random() * (maximo+1 ))
+  if(numAleatorio == palpite){
+    return "Acertou!"
+  }
+  return "Errou! Tente novamente!"
 }
-
 
 // NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { adivinharNumero };
